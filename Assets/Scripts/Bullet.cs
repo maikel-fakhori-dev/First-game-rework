@@ -14,7 +14,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
