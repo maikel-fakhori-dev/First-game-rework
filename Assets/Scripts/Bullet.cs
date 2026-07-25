@@ -5,15 +5,17 @@ public class Bullet : MonoBehaviour
     public float bulletDamage = 10f;
 
     private GameObject zombie;
+    private GameObject floor;
     // Start is called once before the first execution of Update after the MonoBehaviour is create
 
+    void Start()
+    {
+        floor = GameObject.Find("Floor");
+    }
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y <= 0)
-        {
-            Destroy(gameObject);
-        }
+       
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -22,6 +24,11 @@ public class Bullet : MonoBehaviour
             Debug.Log("hit");
             Destroy(gameObject);
             collision.gameObject.GetComponent<ZombieController>().zombieHealth -= bulletDamage;
+        }
+
+        if (collision.gameObject == floor)
+        {
+            Destroy(gameObject);
         }
     }
 }
