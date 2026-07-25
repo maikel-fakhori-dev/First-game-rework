@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float xSensitivity = 10.0f;
     public float playerHealth = 100f;
 
-    private CursorLockMode locked;
+    
     private InputSystem_Actions.PlayerActions controls;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         controls.Enable();
+        Cursor.visible = false;
         
-
     }
 
     private void OnDisable()
@@ -44,15 +44,14 @@ public class PlayerController : MonoBehaviour
         if (playerHealth <=0)
         {
             Debug.Log("Game Over");
-            locked = CursorLockMode.None;
-            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             Application.Quit();
         }
         else 
         {
-            locked = CursorLockMode.Locked;
             
-            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+
         }
     }
     

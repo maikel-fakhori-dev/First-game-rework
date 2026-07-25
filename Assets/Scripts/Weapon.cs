@@ -24,6 +24,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            Debug.Log("fire weapon");
             FireWeapon();
             //Debug.DrawRay(bulletSpawn.position, bulletSpawn.forward, Color.white ,10000);
         }
@@ -38,12 +39,14 @@ public class Weapon : MonoBehaviour
         {
             // ...then use the exact point that was hit as the target.
             targetPoint = hit.point;
+            
         }
         else
         {
             // If the ray doesn't hit anything, choose a point 1000 units away
             // along the ray. This gives the bullet somewhere to travel.
             targetPoint = ray.GetPoint(1000f);
+            
         }
         Vector3 shootDirection = (targetPoint - bulletSpawn.position).normalized;
 
