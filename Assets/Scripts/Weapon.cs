@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        Physics.Raycast(ray, out hit);
+        
         Vector3 targetPoint;
         if (Physics.Raycast(ray, out hit))
         {
