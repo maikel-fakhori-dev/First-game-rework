@@ -127,9 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ff40567538d63478e86d79e38f553c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieController
-  zombieSpeed: 0.025
-  zombieDamage: 10
-  zombieHealth: 50
+  zombieSpeed: 0.05
+  zombieDamage: 40
+  zombieHealth: 100
 --- !u!54 &2697660252495226988
 Rigidbody:
   m_ObjectHideFlags: 0
