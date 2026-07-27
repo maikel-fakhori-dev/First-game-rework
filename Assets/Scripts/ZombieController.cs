@@ -24,6 +24,11 @@ public class ZombieController : MonoBehaviour
         Vector3 playerDirection = (player.transform.position - transform.position).normalized;
         //zombieRb.AddForce(playerDirection * zombieSpeed);
         transform.Translate(playerDirection * zombieSpeed);
+
+        playerDirection.y = 0;
+
+        transform.rotation = Quaternion.LookRotation(playerDirection);
+       
     }
     void Update()
     {
