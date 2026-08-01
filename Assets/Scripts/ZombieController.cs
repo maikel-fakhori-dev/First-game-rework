@@ -1,14 +1,19 @@
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
+
 public class ZombieController : MonoBehaviour
 {
     public float zombieSpeed = 1f;
     public float zombieDamage = 10f;
     public float zombieHealth = 100f;
 
-    private GameObject player;
+    
+    public int scoreAdd;
+    
 
+    private GameObject player;
+    private ZombieSpawnManager spawnManager;
     //private Rigidbody zombieRb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +21,7 @@ public class ZombieController : MonoBehaviour
     {
         //zombieRb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
+        spawnManager = GameObject.Find("Zombie Spawn Manager").GetComponent<ZombieSpawnManager>();
     }
 
     // Update is called once per frame
@@ -38,6 +44,7 @@ public class ZombieController : MonoBehaviour
         }
         if (zombieHealth <= 0)
         {
+            spawnManager.AddScore(scoreAdd);
             Destroy(gameObject);
         }
     }

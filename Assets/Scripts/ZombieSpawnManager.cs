@@ -1,9 +1,11 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class ZombieSpawnManager : MonoBehaviour
 {
+    public TextMeshProUGUI scoreText;
 
     public GameObject zombieNormal;
     public GameObject zombieFast;
@@ -11,7 +13,10 @@ public class ZombieSpawnManager : MonoBehaviour
 
     public int waveNumber = 1;
 
+
     private float spawnRange = 9;
+    private int scoreToAdd;
+    private int score = 0;
     private int randomIndex;
     private int enemyCount;
     private GameObject[] zombies;
@@ -27,7 +32,16 @@ public class ZombieSpawnManager : MonoBehaviour
         };
         
         SpawnEnemyWave(waveNumber);
+        
     }
+
+
+    public void AddScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+        scoreText.text = "Score: " + score;
+    }
+
     private void SpawnEnemyWave(int enemiesToSpawn)
     {   for (int i = 0; i < enemiesToSpawn; i++)
         {
@@ -42,7 +56,13 @@ public class ZombieSpawnManager : MonoBehaviour
     void Update()
     {
         enemyCount = GameObject.FindGameObjectsWithTag("Zombie").Length;
-        if (enemyCount == 0) { waveNumber++; SpawnEnemyWave(waveNumber); } ;
+        if (enemyCount == 0)
+        { 
+            waveNumber++; SpawnEnemyWave(waveNumber);
+        } 
+
+        
+
     }
     private Vector3 GenerateSpawnPosition()
     {

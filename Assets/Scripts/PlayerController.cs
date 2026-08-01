@@ -41,11 +41,11 @@ public class PlayerController : MonoBehaviour
         float yawInput = rotation.x;
         transform.Rotate(0, yawInput * Time.deltaTime*xSensitivity, 0);
 
-        if (playerHealth <=0)
+        if (playerHealth <=0 || transform.position.y < -1)
         {
             Debug.Log("Game Over");
             Cursor.lockState = CursorLockMode.None;
-            Application.Quit();
+            
         }
         else 
         {

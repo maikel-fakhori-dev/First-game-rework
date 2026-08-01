@@ -130,6 +130,7 @@ MonoBehaviour:
   zombieSpeed: 0.05
   zombieDamage: 40
   zombieHealth: 100
+  scoreAdd: 3
 --- !u!54 &2697660252495226988
 Rigidbody:
   m_ObjectHideFlags: 0
