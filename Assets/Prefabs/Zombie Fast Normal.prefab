@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 946834719295878350}
   - component: {fileID: 1667657485441621}
   - component: {fileID: 3282421473919163610}
-  - component: {fileID: -2281970881793424631}
   - component: {fileID: -6741463983838875556}
   m_Layer: 0
   m_Name: Zombie Fast Normal
@@ -160,32 +159,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!111 &-2281970881793424631
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469091888107748922}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Animation: {fileID: -203655887218126122, guid: 7520cb6620cbf4543b0a79f23c3ee451, type: 3}
-  m_Animations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &-6741463983838875556
 Animator:
   serializedVersion: 7

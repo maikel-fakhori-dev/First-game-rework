@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2923849818717004372}
   - component: {fileID: 6654749275347773765}
   - component: {fileID: 1624937599060264356}
-  - component: {fileID: -3676510961528070940}
   - component: {fileID: 1929467237753016668}
   m_Layer: 0
   m_Name: Zombie Normal Normal
@@ -160,27 +159,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!111 &-3676510961528070940
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898133714155997330}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Animation: {fileID: -203655887218126122, guid: 7520cb6620cbf4543b0a79f23c3ee451, type: 3}
-  m_Animations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &1929467237753016668
 Animator:
   serializedVersion: 7

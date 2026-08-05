@@ -7,7 +7,6 @@ public class ZombieController : MonoBehaviour
     public float zombieSpeed = 1f;
     public float zombieDamage = 10f;
     public float zombieHealth = 100f;
-
     
     public int scoreAdd;
     
@@ -29,11 +28,12 @@ public class ZombieController : MonoBehaviour
     {
         Vector3 playerDirection = (player.transform.position - transform.position).normalized;
         //zombieRb.AddForce(playerDirection * zombieSpeed);
-        transform.Translate(playerDirection * zombieSpeed);
+        //transform.Translate(playerDirection * zombieSpeed);
 
         playerDirection.y = 0;
 
         transform.rotation = Quaternion.LookRotation(playerDirection);
+        transform.Translate(new Vector3(0,0,zombieSpeed));
        
     }
     void Update()

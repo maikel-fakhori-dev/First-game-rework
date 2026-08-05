@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5445372191956175701}
   - component: {fileID: 4759080553090502152}
   - component: {fileID: 2697660252495226988}
-  - component: {fileID: -6756256877987349237}
   - component: {fileID: -7312992826015019239}
   m_Layer: 0
   m_Name: Zombie Slow Strong
@@ -160,23 +159,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!111 &-6756256877987349237
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36804089276683627}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Animation: {fileID: -203655887218126122, guid: 7520cb6620cbf4543b0a79f23c3ee451, type: 3}
-  m_Animations:
-  - {fileID: 0}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &-7312992826015019239
 Animator:
   serializedVersion: 7
