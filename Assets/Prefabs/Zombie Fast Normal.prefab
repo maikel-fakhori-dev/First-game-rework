@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 946834719295878350}
   - component: {fileID: 1667657485441621}
   - component: {fileID: 3282421473919163610}
-  - component: {fileID: -6741463983838875556}
   m_Layer: 0
   m_Name: Zombie Fast Normal
   m_TagString: Zombie
@@ -159,28 +158,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!95 &-6741463983838875556
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469091888107748922}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 885eac34fd0d577439e6670a7ca3777e, type: 3}
-  m_Controller: {fileID: 9100000, guid: b49af22c7848b884bab852fe5d226d77, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &3901544963330113607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,10 +166,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1460597821399404678}
     m_Modifications:
-    - target: {fileID: 127867265787259768, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-      propertyPath: m_AnimatePhysics
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -255,7 +228,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 42507710379023304}
+      addedObject: {fileID: 8316166771442311918}
   m_SourcePrefab: {fileID: 100100000, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!4 &6990563212422426949 stripped
 Transform:
@@ -267,7 +240,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
   m_PrefabInstance: {fileID: 3901544963330113607}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &42507710379023304
+--- !u!65 &8316166771442311918
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,5 +259,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.41343045, y: 2.0935478, z: 0.30975842}
-  m_Center: {x: 0.01644957, y: 1.0250354, z: 0.024620414}
+  m_Size: {x: 0.41873026, y: 2.0877783, z: 0.34593368}
+  m_Center: {x: 0.01813078, y: 1.0549845, z: 0.043925405}
