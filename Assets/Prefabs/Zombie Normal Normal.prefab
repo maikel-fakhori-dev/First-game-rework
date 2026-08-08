@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2923849818717004372}
   - component: {fileID: 6654749275347773765}
   - component: {fileID: 1624937599060264356}
-  - component: {fileID: 1929467237753016668}
   m_Layer: 0
   m_Name: Zombie Normal Normal
   m_TagString: Zombie
@@ -128,10 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ff40567538d63478e86d79e38f553c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieController
-  zombieSpeed: 0.1
+  zombieSpeed: 0.14
   zombieDamage: 10
   zombieHealth: 50
+  zombieXdistance: 0.4933063
+  zombieZdistance: 0.3064598
   scoreAdd: 5
+  zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!54 &1624937599060264356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,28 +161,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!95 &1929467237753016668
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898133714155997330}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 885eac34fd0d577439e6670a7ca3777e, type: 3}
-  m_Controller: {fileID: 9100000, guid: b49af22c7848b884bab852fe5d226d77, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4280057836824425961
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -130,7 +130,10 @@ MonoBehaviour:
   zombieSpeed: 0.2
   zombieDamage: 20
   zombieHealth: 30
+  zombieXdistance: 0.4
+  zombieZdistance: 0.3
   scoreAdd: 10
+  zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!54 &3282421473919163610
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5445372191956175701}
   - component: {fileID: 4759080553090502152}
   - component: {fileID: 2697660252495226988}
-  - component: {fileID: -7312992826015019239}
   m_Layer: 0
   m_Name: Zombie Slow Strong
   m_TagString: Zombie
@@ -128,10 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ff40567538d63478e86d79e38f553c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieController
-  zombieSpeed: 0.05
+  zombieSpeed: 0.1
   zombieDamage: 40
   zombieHealth: 100
+  zombieXdistance: 0.5721601
+  zombieZdistance: 0.3375756
   scoreAdd: 3
+  zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!54 &2697660252495226988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,28 +161,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!95 &-7312992826015019239
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36804089276683627}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 885eac34fd0d577439e6670a7ca3777e, type: 3}
-  m_Controller: {fileID: 9100000, guid: b49af22c7848b884bab852fe5d226d77, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4300935367192383466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,6 +232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3496688861129024591}
+    - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7858998312969833711}
   m_SourcePrefab: {fileID: 100100000, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!1 &7476616448505373778 stripped
 GameObject:
@@ -279,6 +262,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.57216007, y: 2.1064928, z: 0.33757564}
   m_Center: {x: 0.00829348, y: 1.0489482, z: 0.023374006}
+--- !u!111 &7858998312969833711
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7476616448505373778}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: -203655887218126122, guid: 93ee2f5cc364fec44b0fdb2aa29de84a, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 1
+  m_CullingType: 0
 --- !u!4 &7820948943867559656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
