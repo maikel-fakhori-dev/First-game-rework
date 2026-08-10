@@ -128,10 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieController
   zombieSpeed: 0.14
-  zombieDamage: 10
+  zombieDamage: 20
   zombieHealth: 50
-  zombieXdistance: 0.4933063
-  zombieZdistance: 0.3064598
   scoreAdd: 5
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!54 &1624937599060264356

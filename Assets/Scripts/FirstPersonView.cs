@@ -20,10 +20,10 @@ public class FirstPersonView : MonoBehaviour
         controls.Enable();
     }
 
-    private void OnDisable()
-    {
-        controls.Disable();
-    }
+    //private void OnDisable()
+    //{
+    //    controls.Disable();
+    //}
    
     // Update is called once per frame
     void Update()

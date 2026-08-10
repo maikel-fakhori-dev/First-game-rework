@@ -24,10 +24,10 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private void OnDisable()
-    {
-        controls.Disable();
-    }
+    //private void OnDisable()
+   // {
+        //controls.Disable();
+    //}
     // Update is called once per frame
     void Update()
     {   //We first need to enter the Inputsystem_action then navigate through to the movement options and extract the vector that is made by movement, then we take these values and translate by them.

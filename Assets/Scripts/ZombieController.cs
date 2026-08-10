@@ -61,9 +61,8 @@ public class ZombieController : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            player.GetComponent<PlayerController>().playerHealth -= zombieDamage;
             zombieAnimator.SetBool("canAttack",true);
-            Debug.Log("Take Damage");
+            
         }
     }
     void OnCollisionExit(Collision collision)
@@ -72,5 +71,11 @@ public class ZombieController : MonoBehaviour
         {
             zombieAnimator.SetBool("canAttack", false);
         }
+    }
+
+    public void DoDamage()
+    {
+        player.GetComponent<PlayerController>().playerHealth -= zombieDamage;
+        Debug.Log("Take Damage");
     }
 }
