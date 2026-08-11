@@ -1335,6 +1335,7 @@ GameObject:
   - component: {fileID: 6279823610682781954}
   - component: {fileID: -8860791554960772113}
   - component: {fileID: -943557505901220403}
+  - component: {fileID: -152470493983118775}
   m_Layer: 0
   m_Name: (P) Characters_Zombie_SuitMan_1
   m_TagString: Untagged
@@ -1352,7 +1353,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2419545488649489685}
@@ -1393,6 +1394,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7ccbf06b70f664eb375c73469bbf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieAnimationEvent
+--- !u!65 &-152470493983118775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6660184903045082040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4597275, y: 2.112252, z: 0.33320767}
+  m_Center: {x: -0.022713318, y: 1.0402242, z: 0.02700328}
 --- !u!1 &6906493944559020957
 GameObject:
   m_ObjectHideFlags: 0

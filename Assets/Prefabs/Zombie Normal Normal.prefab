@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5730703612496553112}
   - component: {fileID: 694156996609875746}
   - component: {fileID: 2510873914684066082}
-  - component: {fileID: 2923849818717004372}
   - component: {fileID: 6654749275347773765}
   - component: {fileID: 1624937599060264356}
   m_Layer: 0
@@ -94,27 +93,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2923849818717004372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898133714155997330}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6654749275347773765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,40 +189,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: (P) Characters_Zombie_SuitMan_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225838858870519303, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+    - {fileID: 6206357569278578635, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3876870142395956478}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
---- !u!1 &7424301688533556817 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-  m_PrefabInstance: {fileID: 4280057836824425961}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &3876870142395956478
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7424301688533556817}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.49330634, y: 2.0745974, z: 0.30645978}
-  m_Center: {x: 0.0037545934, y: 1.0535333, z: 0.028011054}
 --- !u!4 &7801285276626601195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}

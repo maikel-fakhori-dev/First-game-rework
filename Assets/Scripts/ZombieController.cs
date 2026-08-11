@@ -10,7 +10,7 @@ public class ZombieController : MonoBehaviour
     public int scoreAdd;
     public Animator zombieAnimator;
 
-    private bool canAttack;
+    public bool canAttack;
     private GameObject player;
     private ZombieSpawnManager spawnManager;
     

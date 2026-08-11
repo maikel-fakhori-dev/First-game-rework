@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float xSensitivity = 10.0f;
     public float playerHealth = 100f;
 
-    
+    private bool gameOver = false;
     private InputSystem_Actions.PlayerActions controls;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,9 +43,12 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <=0 || transform.position.y < -1)
         {
-            Debug.Log("Game Over");
-            Cursor.lockState = CursorLockMode.None;
-            
+            if (gameOver == false)
+            {
+                Debug.Log("Game Over");
+                Cursor.lockState = CursorLockMode.None;
+                gameOver = true;
+            }
         }
         else 
         {

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1611923630694786472}
   - component: {fileID: 7098332847950167083}
   - component: {fileID: 4040623791899094241}
-  - component: {fileID: 5445372191956175701}
   - component: {fileID: 4759080553090502152}
   - component: {fileID: 2697660252495226988}
   m_Layer: 0
@@ -94,27 +93,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5445372191956175701
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36804089276683627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4759080553090502152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +108,6 @@ MonoBehaviour:
   zombieSpeed: 0.1
   zombieDamage: 40
   zombieHealth: 100
-  zombieXdistance: 0.5721601
-  zombieZdistance: 0.3375756
   scoreAdd: 3
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
 --- !u!54 &2697660252495226988
@@ -225,59 +201,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: (P) Characters_Zombie_SuitMan_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6206357569278578635, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+    - {fileID: 1225838858870519303, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3496688861129024591}
-    - targetCorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7858998312969833711}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
---- !u!1 &7476616448505373778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
-  m_PrefabInstance: {fileID: 4300935367192383466}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &3496688861129024591
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7476616448505373778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.57216007, y: 2.1064928, z: 0.33757564}
-  m_Center: {x: 0.00829348, y: 1.0489482, z: 0.023374006}
---- !u!111 &7858998312969833711
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7476616448505373778}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: -203655887218126122, guid: 93ee2f5cc364fec44b0fdb2aa29de84a, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 1
-  m_CullingType: 0
 --- !u!4 &7820948943867559656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
