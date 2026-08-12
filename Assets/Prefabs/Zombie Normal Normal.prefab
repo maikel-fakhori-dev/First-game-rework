@@ -110,6 +110,7 @@ MonoBehaviour:
   zombieHealth: 50
   scoreAdd: 5
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+  canAttack: 0
 --- !u!54 &1624937599060264356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,6 +146,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5730703612496553112}
     m_Modifications:
+    - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
