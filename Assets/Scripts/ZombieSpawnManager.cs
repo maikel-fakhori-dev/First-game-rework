@@ -39,7 +39,7 @@ public class ZombieSpawnManager : MonoBehaviour
     public void AddScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score " + score;
     }
 
     private void SpawnEnemyWave(int enemiesToSpawn)
