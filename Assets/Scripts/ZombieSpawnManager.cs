@@ -68,7 +68,7 @@ public class ZombieSpawnManager : MonoBehaviour
     {
         float spawnPosX = UnityEngine.Random.Range(-spawnRange, spawnRange);
         float spawnPosZ = UnityEngine.Random.Range(-spawnRange, spawnRange);
-        Vector3 randomPos = new Vector3 (spawnPosX, 2, spawnPosZ);
+        Vector3 randomPos = new Vector3 (spawnPosX, 1, spawnPosZ);
         return randomPos;
     }
 }
