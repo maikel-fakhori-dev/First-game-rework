@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +27,7 @@ public class ZombieHealthBar : MonoBehaviour
             zombieHealthBar.value = zombieController.zombieHealth;
         }
 
-        if (transform.position.x - player.transform.position.x > 4 || transform.position.z - player.transform.position.z > 4)
+        if (math.abs(transform.position.x - player.transform.position.x)> 4 || math.abs(transform.position.z - player.transform.position.z) > 4)
         {
             zombieHealthBar.gameObject.SetActive(false);
         }
