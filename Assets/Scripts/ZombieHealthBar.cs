@@ -27,7 +27,7 @@ public class ZombieHealthBar : MonoBehaviour
             zombieHealthBar.value = zombieController.zombieHealth;
         }
 
-        if (math.abs(transform.position.x - player.transform.position.x)> 4 || math.abs(transform.position.z - player.transform.position.z) > 4)
+        if (math.abs(transform.position.x - player.transform.position.x)> 7 || math.abs(transform.position.z - player.transform.position.z) > 7)
         {
             zombieHealthBar.gameObject.SetActive(false);
         }
