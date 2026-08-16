@@ -14,7 +14,7 @@ public class ZombieSpawnManager : MonoBehaviour
     public int waveNumber = 1;
 
 
-    private float spawnRange = 9;
+    private float spawnRange = 15;
     private int scoreToAdd;
     private int score = 0;
     private int randomIndex;
