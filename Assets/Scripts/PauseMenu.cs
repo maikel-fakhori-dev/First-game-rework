@@ -1,11 +1,22 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject menuUI;
-    // Update is called once per frame
+
+    private GameObject player;
+
+    private PlayerController playerController;
+    private Weapon weapon;
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        playerController = player.GetComponent<PlayerController>();
+        weapon = playerController.GetComponentInChildren<Weapon>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -19,25 +30,25 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-        if (isPaused)
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
     }
-    void Resume()
+    public void Resume()
     {
         menuUI.SetActive(false);
         Time.timeScale = 1;
         isPaused = false;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        playerController.enabled = true;
+        weapon.enabled = true;
     }
-    void Pause()
+    public void Pause()
     {
         menuUI.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
-        
+        playerController.enabled = false;
+        weapon.enabled = false;
+    }
+    public void OnMenuClick()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

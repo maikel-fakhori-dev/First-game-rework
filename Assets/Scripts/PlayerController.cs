@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
 
     private bool gameOver = false;
     private InputSystem_Actions.PlayerActions controls;
+    
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         controls = new InputSystem_Actions().Player;
+        
     }
 
     private void OnEnable()

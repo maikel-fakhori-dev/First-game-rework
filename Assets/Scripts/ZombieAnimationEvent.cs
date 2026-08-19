@@ -7,6 +7,19 @@ public class ZombieAnimationEvent : MonoBehaviour
     private GameObject player;
     private GameObject zombie;
     private bool isTouching;
+
+    private PlayerController playerController;
+    private Weapon weapon;
+
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        playerController = player.GetComponent<PlayerController>();
+        weapon = playerController.GetComponentInChildren<Weapon>();
+        playerController.enabled = true;
+        weapon.enabled = true;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
