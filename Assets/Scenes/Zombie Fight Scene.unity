@@ -628,6 +628,7 @@ GameObject:
   - component: {fileID: 327273864}
   - component: {fileID: 327273863}
   - component: {fileID: 327273867}
+  - component: {fileID: 327273868}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -736,6 +737,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   healthBar: {fileID: 2036498100}
   healthNumber: {fileID: 536764038}
+--- !u!114 &327273868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327273862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2298ee9f6a46fa3448a791a4340fac76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  menuUI: {fileID: 1115926783}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +1956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1115926784
 RectTransform:
   m_ObjectHideFlags: 0
