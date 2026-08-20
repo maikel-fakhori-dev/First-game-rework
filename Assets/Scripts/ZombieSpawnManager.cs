@@ -21,6 +21,8 @@ public class ZombieSpawnManager : MonoBehaviour
     private int enemyCount;
     private GameObject[] zombies;
 
+    private int maxScore;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,7 +34,9 @@ public class ZombieSpawnManager : MonoBehaviour
         };
         
         SpawnEnemyWave(waveNumber);
-        
+        maxScore = PlayerPrefs.GetInt("maxScore",0);
+        PlayerPrefs.Save();
+        Debug.Log(maxScore);
     }
 
 
@@ -40,6 +44,13 @@ public class ZombieSpawnManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score " + score;
+        if (maxScore<score)
+        {
+            maxScore = score;
+            PlayerPrefs.SetInt("maxScore", maxScore);
+            PlayerPrefs.Save();
+        }
+        
     }
 
     private void SpawnEnemyWave(int enemiesToSpawn)
@@ -59,7 +70,7 @@ public class ZombieSpawnManager : MonoBehaviour
         if (enemyCount == 0)
         { 
             waveNumber++; SpawnEnemyWave(waveNumber);
-        } 
+        }
 
         
 
