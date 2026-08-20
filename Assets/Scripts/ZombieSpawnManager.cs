@@ -6,6 +6,7 @@ using TMPro;
 public class ZombieSpawnManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI finalScoreText;
 
     public GameObject zombieNormal;
     public GameObject zombieFast;
@@ -44,6 +45,7 @@ public class ZombieSpawnManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score " + score;
+        finalScoreText.text = "Final Score " + score;
         if (maxScore<score)
         {
             maxScore = score;

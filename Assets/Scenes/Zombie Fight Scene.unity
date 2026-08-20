@@ -426,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieSpawnManager
   scoreText: {fileID: 136772942}
+  finalScoreText: {fileID: 1884909758}
   zombieNormal: {fileID: 1898133714155997330, guid: 532e61a6c5c3e4f4896aca3054eea372, type: 3}
   zombieFast: {fileID: 1469091888107748922, guid: 899a5aa4d31fc484c856203f9d6aada2, type: 3}
   zombieStrong: {fileID: 36804089276683627, guid: 5fe8ec53d917f374a912e757ebb90413, type: 3}
@@ -3843,6 +3844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e80b6f07a637a49b09fe4461af1191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Highscore
+  highScoreDisplay: {fileID: 0}
 --- !u!1 &1917378504
 GameObject:
   m_ObjectHideFlags: 0

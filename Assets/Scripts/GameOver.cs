@@ -10,6 +10,8 @@ public class GameOver : MonoBehaviour
     private PlayerController playerController;
     private Weapon weapon;
     private ZombieSpawnManager zombieSpawnManager;
+
+    private FirstPersonView firstPersonView;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +19,7 @@ public class GameOver : MonoBehaviour
         player = GameObject.Find("Player");
         playerController = player.GetComponent<PlayerController>();
         weapon = playerController.GetComponentInChildren<Weapon>();
+        firstPersonView = playerController.GetComponentInChildren<FirstPersonView>();
     }
 
     // Update is called once per frame
@@ -34,6 +37,7 @@ public class GameOver : MonoBehaviour
         gameOver = true;
         playerController.enabled = false;
         weapon.enabled = false;
+        firstPersonView.enabled = false;
     }
     public void Retry()
     {
@@ -45,6 +49,7 @@ public class GameOver : MonoBehaviour
         player.transform.position = new Vector3(0,1,0);
         playerController.playerHealth = 100;
         zombieSpawnManager.score = 0;
+        firstPersonView.enabled = true;
     }
     public void OnExitClick()
     {

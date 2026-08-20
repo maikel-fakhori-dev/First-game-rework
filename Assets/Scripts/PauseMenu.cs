@@ -11,11 +11,13 @@ public class PauseMenu : MonoBehaviour
 
     private PlayerController playerController;
     private Weapon weapon;
+    private FirstPersonView firstPersonView;
     private void Start()
     {
         player = GameObject.Find("Player");
         playerController = player.GetComponent<PlayerController>();
         weapon = playerController.GetComponentInChildren<Weapon>();
+       firstPersonView = playerController.GetComponentInChildren<FirstPersonView>();
     }
     void Update()
     {
@@ -38,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         playerController.enabled = true;
         weapon.enabled = true;
+        firstPersonView.enabled = true;
     }
     public void Pause()
     {
@@ -46,6 +49,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         playerController.enabled = false;
         weapon.enabled = false;
+        firstPersonView.enabled = false;
     }
     public void OnMenuClick()
     {
