@@ -26,8 +26,11 @@ public class GameOver : MonoBehaviour
     void Update()
     {
         if (playerController.playerHealth <= 0)
-        {
-            GameOverFunction();
+        { if (gameOver == false)
+            {
+                GameOverFunction();
+                gameOver = true;
+            }
         }
     }
     public void GameOverFunction()
