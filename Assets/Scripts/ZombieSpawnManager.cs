@@ -16,7 +16,7 @@ public class ZombieSpawnManager : MonoBehaviour
 
     private float spawnRange = 15;
     private int scoreToAdd;
-    private int score = 0;
+    public int score = 0;
     private int randomIndex;
     private int enemyCount;
     private GameObject[] zombies;
