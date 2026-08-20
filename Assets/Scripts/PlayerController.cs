@@ -22,14 +22,16 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         controls.Enable();
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        
     }
 
-    //private void OnDisable()
-   // {
-        //controls.Disable();
-    //}
+    private void OnDisable()
+   {
+        controls.Disable();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     // Update is called once per frame
     void Update()
     {   //We first need to enter the Inputsystem_action then navigate through to the movement options and extract the vector that is made by movement, then we take these values and translate by them.
@@ -52,12 +54,6 @@ public class PlayerController : MonoBehaviour
                 gameOver = true;
                 playerHealth = 0;
             }
-        }
-        else 
-        {
-            
-            Cursor.lockState = CursorLockMode.Locked;
-
         }
     }
     
