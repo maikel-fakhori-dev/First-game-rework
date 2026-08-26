@@ -53,6 +53,12 @@ public class GameOver : MonoBehaviour
         playerController.playerHealth = 100;
         zombieSpawnManager.score = 0;
         firstPersonView.enabled = true;
+        zombieSpawnManager.enemyCount = 0;
+        zombieSpawnManager.waveNumber = 1;
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Zombie"))
+        {
+            Destroy(g);
+        }
     }
     public void OnExitClick()
     {

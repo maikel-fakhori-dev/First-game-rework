@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         {
             if (gameOver == false)
             {
-                Debug.Log("Game Over");
+                //Debug.Log("Game Over");
                 Cursor.lockState = CursorLockMode.None;
                 gameOver = true;
                 playerHealth = 0;

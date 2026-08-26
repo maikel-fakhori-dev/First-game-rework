@@ -19,7 +19,7 @@ public class ZombieSpawnManager : MonoBehaviour
     private int scoreToAdd;
     public int score = 0;
     private int randomIndex;
-    private int enemyCount;
+    public int enemyCount;
     private GameObject[] zombies;
 
     private int maxScore;
@@ -37,7 +37,7 @@ public class ZombieSpawnManager : MonoBehaviour
         SpawnEnemyWave(waveNumber);
         maxScore = PlayerPrefs.GetInt("maxScore",0);
         PlayerPrefs.Save();
-        Debug.Log(maxScore);
+        //Debug.Log(maxScore);
     }
 
 

@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("fire weapon");
+            //Debug.Log("fire weapon");
             FireWeapon();
             //Debug.DrawRay(bulletSpawn.position, bulletSpawn.forward, Color.white ,10000);
         }

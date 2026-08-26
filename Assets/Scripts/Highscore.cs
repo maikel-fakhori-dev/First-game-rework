@@ -6,7 +6,7 @@ public class Highscore : MonoBehaviour
     public TextMeshProUGUI highScoreDisplay;
     private int highScore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void OnEnable()
+    void Start()
     {
         highScore = PlayerPrefs.GetInt("maxScore",0);
         highScoreDisplay.text = "Highscore " + highScore;

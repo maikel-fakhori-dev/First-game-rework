@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Zombie"))
         {
-            Debug.Log("hit");
+            //Debug.Log("hit");
             Destroy(gameObject);
             collision.gameObject.GetComponent<ZombieController>().zombieHealth -= bulletDamage;
         }

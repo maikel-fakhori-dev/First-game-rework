@@ -432,6 +432,7 @@ MonoBehaviour:
   zombieStrong: {fileID: 36804089276683627, guid: 5fe8ec53d917f374a912e757ebb90413, type: 3}
   waveNumber: 1
   score: 0
+  enemyCount: 0
 --- !u!4 &153902792
 Transform:
   m_ObjectHideFlags: 0
@@ -3705,7 +3706,6 @@ GameObject:
   - component: {fileID: 1884909757}
   - component: {fileID: 1884909759}
   - component: {fileID: 1884909758}
-  - component: {fileID: 1884909760}
   m_Layer: 5
   m_Name: Final Score
   m_TagString: Untagged
@@ -3832,19 +3832,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884909756}
   m_CullTransparentMesh: 1
---- !u!114 &1884909760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884909756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07e80b6f07a637a49b09fe4461af1191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Highscore
-  highScoreDisplay: {fileID: 0}
 --- !u!1 &1917378504
 GameObject:
   m_ObjectHideFlags: 0

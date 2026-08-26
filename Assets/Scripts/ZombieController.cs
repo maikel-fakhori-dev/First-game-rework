@@ -76,6 +76,6 @@ public class ZombieController : MonoBehaviour
     public void DoDamage()
     {
         player.GetComponent<PlayerController>().playerHealth -= zombieDamage;
-        Debug.Log("Take Damage");
+        //Debug.Log("Take Damage");
     }
 }
