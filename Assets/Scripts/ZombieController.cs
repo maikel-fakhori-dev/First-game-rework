@@ -19,6 +19,7 @@ public class ZombieController : MonoBehaviour
     public AudioClip zombieAttackScream;
 
     public AudioClip playerDamage;
+    public AudioClip zombieDeath;
     //private Rigidbody zombieRb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -60,7 +61,9 @@ public class ZombieController : MonoBehaviour
         if (zombieHealth <= 0)
         {
             spawnManager.AddScore(scoreAdd);
-            Destroy(gameObject);
+            audioSource.PlayOneShot(zombieDeath);
+            Destroy(gameObject,0.02f);
+            
         }
     }
     void OnCollisionEnter(Collision collision)
@@ -87,7 +90,7 @@ public class ZombieController : MonoBehaviour
     public void DoDamage()
     {
         player.GetComponent<PlayerController>().playerHealth -= zombieDamage;
-        audioSource.PlayOneShot(playerDamage);
+        audioSource.PlayOneShot(playerDamage,5);
         //Debug.Log("Take Damage");
     }
 }

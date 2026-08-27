@@ -114,6 +114,7 @@ MonoBehaviour:
   zombieSpawn: {fileID: 8300000, guid: ceb551b4266d5e242aaa617bd5ccc663, type: 3}
   zombieAttackScream: {fileID: 8300000, guid: fffd1845b4c9bd340a6a0792c3c3ef7e, type: 3}
   playerDamage: {fileID: 8300000, guid: 3b0a5902d9a199e469421324636b19e6, type: 3}
+  zombieDeath: {fileID: 8300000, guid: 7c29d65d65bc6004684be6376fdd7f91, type: 3}
 --- !u!54 &3282421473919163610
 Rigidbody:
   m_ObjectHideFlags: 0

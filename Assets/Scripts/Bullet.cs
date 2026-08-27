@@ -7,9 +7,12 @@ public class Bullet : MonoBehaviour
     private GameObject zombie;
     private GameObject floor;
     // Start is called once before the first execution of Update after the MonoBehaviour is create
-
+    private AudioSource audioSource;
+    public AudioClip zombieDamaged;
+    
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         floor = GameObject.Find("Floor");
     }
     // Update is called once per frame
@@ -22,8 +25,13 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Zombie"))
         {
             //Debug.Log("hit");
-            Destroy(gameObject);
+            
             collision.gameObject.GetComponent<ZombieController>().zombieHealth -= bulletDamage;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(zombieDamaged,0.5f);
+            }
+            Destroy(gameObject,1);
         }
 
         if (collision.gameObject == floor)
@@ -31,4 +39,5 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+   
 }
