@@ -67,8 +67,12 @@ public class ZombieController : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            zombieAnimator.SetBool("canAttack",true);
-            audioSource.Play();
+            zombieAnimator.SetBool("canAttack", true);
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(zombieAttackScream, 5);
+            }
         }
     }
     void OnCollisionExit(Collision collision)
@@ -76,7 +80,7 @@ public class ZombieController : MonoBehaviour
         if (collision.gameObject == player)
         {
             zombieAnimator.SetBool("canAttack", false);
-            audioSource.Stop();
+            
         }
     }
 
