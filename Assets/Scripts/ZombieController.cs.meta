@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: c4ff40567538d63478e86d79e38f553c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - zombieAnimator: {instanceID: 0}
+  - zombieSpawn: {fileID: 8300000, guid: ceb551b4266d5e242aaa617bd5ccc663, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

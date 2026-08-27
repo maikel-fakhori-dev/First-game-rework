@@ -12,11 +12,12 @@ public class Weapon : MonoBehaviour
 
     private InputSystem_Actions action;
 
-    
+    private AudioSource audioSource;
+    public AudioClip gunShot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,6 +54,7 @@ public class Weapon : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position,Quaternion.identity);
         bullet.GetComponent<Rigidbody>().AddForce(shootDirection*bulletSpeed,ForceMode.Impulse);
         StartCoroutine(DestroyBulletAfterTime(bullet, bulletPrefabLifeTime));
+        audioSource.PlayOneShot(gunShot);
     }
     private IEnumerator DestroyBulletAfterTime(GameObject bullet, float delay)
     {

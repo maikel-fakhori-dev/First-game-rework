@@ -24,9 +24,12 @@ public class ZombieSpawnManager : MonoBehaviour
 
     private int maxScore;
 
+    private InputSystem_Actions action;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         zombies = new GameObject[]
         {
            zombieNormal,
@@ -60,6 +63,7 @@ public class ZombieSpawnManager : MonoBehaviour
         {
             randomIndex = UnityEngine.Random.Range(0, zombies.Length);
             Instantiate(zombies[randomIndex], GenerateSpawnPosition(), Quaternion.identity);
+
         }
     }
        

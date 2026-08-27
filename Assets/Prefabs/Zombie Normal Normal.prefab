@@ -111,6 +111,7 @@ MonoBehaviour:
   scoreAdd: 5
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
   canAttack: 0
+  zombieSpawn: {fileID: 8300000, guid: ceb551b4266d5e242aaa617bd5ccc663, type: 3}
 --- !u!54 &1624937599060264356
 Rigidbody:
   m_ObjectHideFlags: 0

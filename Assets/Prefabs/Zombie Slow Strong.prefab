@@ -110,6 +110,8 @@ MonoBehaviour:
   zombieHealth: 100
   scoreAdd: 3
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+  canAttack: 0
+  zombieSpawn: {fileID: 8300000, guid: ceb551b4266d5e242aaa617bd5ccc663, type: 3}
 --- !u!54 &2697660252495226988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -200,6 +202,14 @@ PrefabInstance:
     - target: {fileID: 6660184903045082040, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       propertyPath: m_Name
       value: (P) Characters_Zombie_SuitMan_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677739509369641784, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677739509369641784, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6206357569278578635, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}

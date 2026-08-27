@@ -13,13 +13,16 @@ public class ZombieController : MonoBehaviour
     public bool canAttack;
     private GameObject player;
     private ZombieSpawnManager spawnManager;
-    
+
+    private AudioSource audioSource;
+    public AudioClip zombieSpawn;
     //private Rigidbody zombieRb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        audioSource = GetComponentInChildren<AudioSource>();
+        audioSource.PlayOneShot(zombieSpawn);
         zombieAnimator = GetComponentInChildren<Animator>();
         //zombieRb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
