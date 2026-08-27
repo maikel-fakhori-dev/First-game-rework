@@ -41,6 +41,7 @@ public class GameOver : MonoBehaviour
         playerController.enabled = false;
         weapon.enabled = false;
         firstPersonView.enabled = false;
+        
     }
     public void Retry()
     {

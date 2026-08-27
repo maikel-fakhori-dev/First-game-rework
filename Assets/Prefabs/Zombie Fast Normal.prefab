@@ -112,6 +112,8 @@ MonoBehaviour:
   zombieAnimator: {fileID: -8860791554960772113, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
   canAttack: 0
   zombieSpawn: {fileID: 8300000, guid: ceb551b4266d5e242aaa617bd5ccc663, type: 3}
+  zombieAttackScream: {fileID: 8300000, guid: fffd1845b4c9bd340a6a0792c3c3ef7e, type: 3}
+  playerDamage: {fileID: 8300000, guid: 3b0a5902d9a199e469421324636b19e6, type: 3}
 --- !u!54 &3282421473919163610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,6 +149,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1460597821399404678}
     m_Modifications:
+    - target: {fileID: -7751406657459224630, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: fffd1845b4c9bd340a6a0792c3c3ef7e, type: 3}
+    - target: {fileID: -7751406657459224630, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 6634216e1eb20e14ba098fb07cdeebce, type: 2}
     - target: {fileID: 6279823610682781954, guid: 970a0e0414fa8be4695cbe8c3d95afd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
