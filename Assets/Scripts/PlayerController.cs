@@ -10,13 +10,15 @@ public class PlayerController : MonoBehaviour
 
     private bool gameOver = false;
     private InputSystem_Actions.PlayerActions controls;
+
+    private AudioSource audioSource;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         controls = new InputSystem_Actions().Player;
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -38,7 +40,16 @@ public class PlayerController : MonoBehaviour
         Vector2 moveInput = controls.Move.ReadValue<Vector2>();
         float forwardMove = moveInput.y;
         float rightMove = moveInput.x;
-        transform.Translate(new Vector3(rightMove, 0, forwardMove)* Time.deltaTime * speed);
+        Vector3 movement = new Vector3(rightMove, 0, forwardMove);
+        transform.Translate(movement* Time.deltaTime * speed);
+        if (movement != Vector3.zero && audioSource.isPlaying == false)
+        {
+        audioSource.Play();
+        }
+        else if (movement == Vector3.zero)
+        {
+           audioSource.Stop();
+        }
 
         //we do the same for the rotation, note yaw is short hand for rotation around y axis, so looking left and right
         Vector2 rotation = controls.Look.ReadValue<Vector2>();
