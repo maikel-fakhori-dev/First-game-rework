@@ -71,11 +71,6 @@ public class ZombieController : MonoBehaviour
         if (collision.gameObject == player)
         {
             zombieAnimator.SetBool("canAttack", true);
-
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(zombieAttackScream, 5);
-            }
         }
     }
     void OnCollisionExit(Collision collision)

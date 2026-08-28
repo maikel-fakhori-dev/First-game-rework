@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ZombieAnimationEvent : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class ZombieAnimationEvent : MonoBehaviour
     private PlayerController playerController;
     private Weapon weapon;
 
+    private AudioSource audioSource;
+    public AudioClip zombieAttackScream;
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         player = GameObject.Find("Player");
         playerController = player.GetComponent<PlayerController>();
         weapon = playerController.GetComponentInChildren<Weapon>();
@@ -32,6 +36,10 @@ public class ZombieAnimationEvent : MonoBehaviour
     {
         if ( zombieController.canAttack == true)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(zombieAttackScream, 5);
+            }
             zombieController.DoDamage();
         }
     }

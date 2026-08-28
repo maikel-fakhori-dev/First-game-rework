@@ -1700,6 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7ccbf06b70f664eb375c73469bbf19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieAnimationEvent
+  zombieAttackScream: {fileID: 8300000, guid: 6e0e58015f526f24589386b15cd1872b, type: 3}
 --- !u!65 &-152470493983118775
 BoxCollider:
   m_ObjectHideFlags: 0
